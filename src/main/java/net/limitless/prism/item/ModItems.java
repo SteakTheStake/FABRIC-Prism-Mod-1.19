@@ -8,7 +8,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static final Item CASTLE_BLOCK_TOP = registerItem("castle_block_top",
-            new Item(new FabricItemSettings().group(ModItemGroup.CASTLE_BLOCKS)));
+            new Item(new FabricItemSettings().group(ModItemGroup.STONE)));
 
 
     private static Item registerItem(String name, Item item) {

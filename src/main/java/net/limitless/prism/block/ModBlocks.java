@@ -14,7 +14,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
     public static final Block CASTLE_BLOCK_TOP = registerBlock("castle_block_top",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.CASTLE_BLOCKS);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.STONE);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
