@@ -12,6 +12,8 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
     public static final Item CASTLE_BLOCK_TOP = registerBlockItem("castle_block_top",
             new Item(new FabricItemSettings().group(ModItemGroup.STONE)));
+    public static final Item CASTLE_BLOCK_WINDOW = registerBlockItem("castle_block_window",
+            new Item(new FabricItemSettings().group(ModItemGroup.STONE)));
 
 
     private static Item registerBlockItem(String name, Item item) {
