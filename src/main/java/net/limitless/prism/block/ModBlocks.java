@@ -20,11 +20,8 @@ public class ModBlocks {
         return Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID, name), block);
     }
 
-
-
     public static void registerModBlocks() {
         Prism.LOGGER.debug("Registering ModBlocks for " + Prism.MOD_ID);
     }
-
 
 }

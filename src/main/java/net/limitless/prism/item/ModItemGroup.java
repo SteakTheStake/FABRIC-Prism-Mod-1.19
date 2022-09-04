@@ -8,5 +8,5 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
     public static final ItemGroup STONE = FabricItemGroupBuilder.build(
-            new Identifier(Prism.MOD_ID, "prism"), () -> new ItemStack(ModItems.CASTLE_BLOCK_TOP));
+            new Identifier(Prism.MOD_ID, "prism"), () -> new ItemStack(ModItems.CastleBlockTop));
 }
