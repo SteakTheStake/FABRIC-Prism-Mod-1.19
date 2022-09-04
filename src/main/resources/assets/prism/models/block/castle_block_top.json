@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "block/cube_all",
+	"parent": "block/castle_block_top",
 	"textures": {
 		"all": "prism:block/stone_bricks"
 	},
