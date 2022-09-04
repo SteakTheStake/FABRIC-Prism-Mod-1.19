@@ -1,5 +1,5 @@
 {
-  "block.prism.stone.castle_block_top": "Castle Block Top",
+  "item.prism.castle_block_top": "Castle Block Top",
 
-  "itemGroup.prism.stone": "Stone"
+  "itemGroup.prism.prism": "Stone"
 }
