@@ -2,6 +2,7 @@ package net.limitless.prism;
 
 import net.fabricmc.api.ModInitializer;
 import net.limitless.prism.block.ModBlocks;
+import net.limitless.prism.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +14,7 @@ public class Prism implements ModInitializer {
 	public void onInitialize() {
 
 		ModBlocks.registerModBlocks();
+		ModItems.registerModItems();
 
 	}
 }
