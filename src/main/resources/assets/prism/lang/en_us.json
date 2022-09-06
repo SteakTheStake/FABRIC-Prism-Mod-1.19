@@ -1,6 +1,13 @@
 {
+  "item.prism.dirty_cobblestone": "Dirty Cobblestone",
+  "item.prism.castle_block": "Castle Block",
   "item.prism.castle_block_top": "Castle Block Top",
   "item.prism.castle_block_window": "Castle Block Window",
 
-  "itemGroup.prism.prism": "Castle Blocks"
+  "block.prism.dirty_cobblestone": "Dirty Cobblestone",
+  "block.prism.castle_block": "Castle Block",
+  "block.prism.castle_block_top": "Castle Block Top",
+  "block.prism.castle_block_window": "Castle Block Window",
+
+  "itemGroup.prism.construction": "Construction Blocks"
 }

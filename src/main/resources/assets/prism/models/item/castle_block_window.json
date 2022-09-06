@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "castle_block_window",
 	"textures": {
-		"0": "prism:block/stone_bricks",
+		"0": "Prism:block/castle_bricks",
 		"1": "prism:block/wood",
-		"particle": "prism:block/stone_bricks"
+		"particle": "Prism:block/castle_bricks"
 	},
 	"elements": [
 		{
@@ -130,14 +130,15 @@
 			"scale": [0.5, 0.5, 0.5]
 		},
 		"gui": {
-			"rotation": [0, 90, 0]
+			"rotation": [30, 225, 0],
+			"scale": [0.625, 0.625, 0.625]
 		},
 		"head": {
 			"rotation": [0, 180, 0],
 			"translation": [0, 13, 7]
 		},
 		"fixed": {
-			"rotation": [0, 90, 0]
+			"rotation": [0, 180, 0]
 		}
 	}
 }

@@ -10,23 +10,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
-    public static final Item CastleBlockTop = registerBlockItem("castle_block_top",
-            new Item(new FabricItemSettings().group(ModItemGroup.STONE)));
-    public static final Item CastleBlockWindow = registerBlockItem("castle_block_window",
-            new Item(new FabricItemSettings().group(ModItemGroup.STONE)));
 
+    public static void registerItems() {
 
-    private static Item registerBlockItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID, name), item);
     }
-
-    public static void registerModItems() {
-        Prism.LOGGER.debug("Registering Mod Items for " + Prism.MOD_ID);
-    }
-
-    private static Item registerBlockItem(String name, Block block, ItemGroup tab) {
-        return Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(tab)));
-    }
-
 }

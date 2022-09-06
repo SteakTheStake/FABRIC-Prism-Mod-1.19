@@ -1,16 +1,25 @@
 package net.limitless.prism.block;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.FacingBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
+import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class CastleBlockWindow extends FacingBlock {
+public class CastleBlockWindow extends HorizontalFacingBlock {
     public CastleBlockWindow(Settings settings) {
         super(settings);
+        setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
+    }
+
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
+        stateManager.add(Properties.HORIZONTAL_FACING);
     }
 
     @Override
@@ -26,5 +35,9 @@ public class CastleBlockWindow extends FacingBlock {
                 createCuboidShape(7.5f, 2f, 14f, 8f, 14f, 15f),
                 createCuboidShape(7.5f, 2f, 1f, 8f, 14f, 2f)
         );
+    }
+
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return (BlockState) this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getPlayerFacing().getOpposite());
     }
 }
