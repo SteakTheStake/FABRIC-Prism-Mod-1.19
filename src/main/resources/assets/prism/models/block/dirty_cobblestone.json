@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "dirty_cobblestone",
 	"textures": {
-		"0": "Prism:block/dirty_cobblestone",
-		"particle": "Prism:block/dirty_cobblestone"
+		"0": "prism:block/dirty_cobblestone",
+		"particle": "prism:block/dirty_cobblestone"
 	},
 	"elements": [
 		{

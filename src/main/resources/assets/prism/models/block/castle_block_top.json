@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/castle_block_top",
 	"textures": {
-		"0": "Prism:block/castle_bricks",
-		"particle": "Prism:block/castle_bricks"
+		"0": "prism:block/castle_bricks",
+		"particle": "prism:block/castle_bricks"
 	},
 	"elements": [
 		{

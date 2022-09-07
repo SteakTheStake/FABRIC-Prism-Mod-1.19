@@ -2,6 +2,10 @@ package net.limitless.prism.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.limitless.prism.Prism;
+import net.limitless.prism.block.custom.CastleBlock;
+import net.limitless.prism.block.custom.CastleBlockTop;
+import net.limitless.prism.block.custom.CastleBlockWindow;
+import net.limitless.prism.block.custom.DirtyCobblestone;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;

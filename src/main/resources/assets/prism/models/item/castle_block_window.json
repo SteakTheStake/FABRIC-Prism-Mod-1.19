@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "castle_block_window",
 	"textures": {
-		"0": "Prism:block/castle_bricks",
+		"0": "prism:block/castle_bricks",
 		"1": "prism:block/wood",
-		"particle": "Prism:block/castle_bricks"
+		"particle": "prism:block/castle_bricks"
 	},
 	"elements": [
 		{
