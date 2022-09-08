@@ -3,11 +3,21 @@
   "item.prism.castle_block": "Castle Block",
   "item.prism.castle_block_top": "Castle Block Top",
   "item.prism.castle_block_window": "Castle Block Window",
+  "item.prism.thatched_roof": "Thatched Roof",
+  "item.prism.village_block": "Village Block",
+  "item.prism.dining_room_chair": "Dining Room Chair",
 
   "block.prism.dirty_cobblestone": "Dirty Cobblestone",
   "block.prism.castle_block": "Castle Block",
   "block.prism.castle_block_top": "Castle Block Top",
   "block.prism.castle_block_window": "Castle Block Window",
+  "block.prism.thatched_roof": "Thatched Roof",
+  "block.prism.village_block": "Village Block",
+  "block.prism.dining_room_chair": "Dining Room Chair",
 
-  "itemGroup.prism.construction": "Construction Blocks"
+  "itemGroup.prism.construction": "Construction Blocks",
+
+  "itemGroup.prism.furniture": "Furniture Blocks",
+
+  "itemGroup.prism.decoration": "Decoration Blocks"
 }

@@ -16,43 +16,36 @@ public class Prism implements ModInitializer {
 
 	public static final ItemGroup construction = FabricItemGroupBuilder.create(
 			new Identifier(MOD_ID,"construction"))
-			.icon(() -> new ItemStack(ModBlocks.CASTLE_BLOCK))
+			.icon(() -> new ItemStack(ModBlocks.DIRTY_COBBLESTONE))
 			.appendItems(stacks -> {
 				stacks.add(new ItemStack(ModBlocks.DIRTY_COBBLESTONE));
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK));
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK_TOP));
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK_WINDOW));
+				stacks.add(new ItemStack(ModBlocks.THATCHED_ROOF));
+				stacks.add(new ItemStack(ModBlocks.VILLAGE_BLOCK));
 			})
 			.build();
 
-	//public static final ItemGroup furniture = FabricItemGroupBuilder.create(
-	//		new Identifier(MOD_ID,"furniture"))
-	//		.icon(() -> new ItemStack(ModBlocks.TWO_DOOR_WARDROBE))
-	//		.appendItems(stacks -> {
-	//			stacks.add(new ItemStack(ModBlocks.TWO_DOOR_WARDROBE));
-	//			stacks.add(new ItemStack(ModBlocks.GRAY_SHELF));
-	//			stacks.add(new ItemStack(ModBlocks.GRAY_WARDROBE));
-	//			stacks.add(new ItemStack(ModBlocks.WHITE_SHELF));
-	//			stacks.add(new ItemStack(ModBlocks.WHITE_WARDROBE));
-	//			stacks.add(new ItemStack(ModBlocks.WHITE_DESK));
-	//			stacks.add(new ItemStack(ModBlocks.WHITE_DOORS));
-	//			stacks.add(new ItemStack(ModBlocks.GAMING_CHAIR));
-	//			stacks.add(new ItemStack(ModBlocks.COUNTER_SINK));
-	//			stacks.add(new ItemStack(ModBlocks.DARKWOOD_DRAWER));
-	//		})
-	//		.build();
+	public static final ItemGroup furniture = FabricItemGroupBuilder.create(
+			new Identifier(MOD_ID,"furniture"))
+			.icon(() -> new ItemStack(ModBlocks.DINGING_ROOM_CHAIR))
+			.appendItems(stacks -> {
+				stacks.add(new ItemStack(ModBlocks.DINGING_ROOM_CHAIR));
+			})
+			.build();
+	/**
+	public static final ItemGroup decoration = FabricItemGroupBuilder.create(
+			new Identifier(MOD_ID,"decoration"))
+			.icon(() -> new ItemStack(ModBlocks.BOOKS1))
+			.appendItems(stacks -> {
+				stacks.add(new ItemStack(ModBlocks.BOOKS1));
+				stacks.add(new ItemStack(ModBlocks.BIG_LAMP));
+				stacks.add(new ItemStack(ModBlocks.PAINTING));
 
-	//public static final ItemGroup decorations = FabricItemGroupBuilder.create(
-	//		new Identifier(MOD_ID,"decorations"))
-	//		.icon(() -> new ItemStack(ModBlocks.BOOKS1))
-	//		.appendItems(stacks -> {
-	//			stacks.add(new ItemStack(ModBlocks.BOOKS1));
-	//			stacks.add(new ItemStack(ModBlocks.BIG_LAMP));
-	//			stacks.add(new ItemStack(ModBlocks.PAINTING));
-
-	//		})
-	//		.build();
-
+			})
+			.build();
+	 **/
 
 	@Override
 	public void onInitialize() {
