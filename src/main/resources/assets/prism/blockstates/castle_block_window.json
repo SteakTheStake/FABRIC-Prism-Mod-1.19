@@ -4,15 +4,15 @@
       "model": "prism:block/castle_block_window"
     },
     "facing=south": {
-      "model": "prism:block/castle_block_window"
+      "model": "prism:block/castle_block_window",
       "y": 180
     },
     "facing=west": {
-      "model": "prism:block/castle_block_window"
+      "model": "prism:block/castle_block_window",
       "y": 270
     },
     "facing=east": {
-      "model": "prism:block/castle_block_window"
+      "model": "prism:block/castle_block_window",
       "y": 90
     }
   }

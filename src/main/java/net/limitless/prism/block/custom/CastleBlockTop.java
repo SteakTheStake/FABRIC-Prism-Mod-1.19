@@ -22,9 +22,9 @@ public class CastleBlockTop extends HorizontalFacingBlock {
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context){
         return VoxelShapes.union(
-                createCuboidShape(0f, 0f, 0f, 16f, 10f, 16f),
+                createCuboidShape(0f, 10f, 4f, 16f, 6f, 8f),
                 createCuboidShape(0f, 10f, 12f, 16f, 16f, 16f),
-                createCuboidShape(0f, 10f, 4f, 16f, 16f, 8f)
+                createCuboidShape(0f, 0f, 0f, 16f, 10f, 16f)
         );
     }
 
