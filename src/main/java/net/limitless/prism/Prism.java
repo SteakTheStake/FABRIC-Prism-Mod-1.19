@@ -34,18 +34,16 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.DINGING_ROOM_CHAIR));
 			})
 			.build();
-	/**
+
 	public static final ItemGroup decoration = FabricItemGroupBuilder.create(
 			new Identifier(MOD_ID,"decoration"))
-			.icon(() -> new ItemStack(ModBlocks.BOOKS1))
+			.icon(() -> new ItemStack(ModBlocks.CLOVER_PATCH))
 			.appendItems(stacks -> {
-				stacks.add(new ItemStack(ModBlocks.BOOKS1));
-				stacks.add(new ItemStack(ModBlocks.BIG_LAMP));
-				stacks.add(new ItemStack(ModBlocks.PAINTING));
+				stacks.add(new ItemStack(ModBlocks.CLOVER_PATCH));
 
 			})
 			.build();
-	 **/
+
 
 	@Override
 	public void onInitialize() {
