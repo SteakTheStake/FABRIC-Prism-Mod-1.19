@@ -18,7 +18,7 @@ public class ModBlocks {
     public static final Block CASTLE_BLOCK_WINDOW = new CastleBlockWindow(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block THATCHED_ROOF = new ThatchedRoof(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
     public static final Block DINGING_ROOM_CHAIR = new DiningRoomChair(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
-    public static final Block CLOVER_PATCH = new CloverPatch(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(false));
+    public static final Block CLOVER_PATCH = new CloverPatch(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(true));
 
     public static void registerModBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"village_block"), VILLAGE_BLOCK);
