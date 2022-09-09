@@ -20,13 +20,6 @@ public class DiningRoomChair extends HorizontalFacingBlock {
     }
 
     @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context){
-        return VoxelShapes.union(
-                createCuboidShape(0f, 0f, 0f, 16f, 8f, 16f)
-        );
-    }
-
-    @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
         stateManager.add(Properties.HORIZONTAL_FACING);
     }

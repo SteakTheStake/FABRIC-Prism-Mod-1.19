@@ -15,12 +15,4 @@ public class CastleBlock extends Block {
         super(FabricBlockSettings.of(Material.STONE));
     }
 
-    @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context){
-        return VoxelShapes.union(
-                createCuboidShape(0f, 0f, 0f, 16f, 16f, 16f)
-        );
-    }
-
-
 }

@@ -24,6 +24,7 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK_WINDOW));
 				stacks.add(new ItemStack(ModBlocks.THATCHED_ROOF));
 				stacks.add(new ItemStack(ModBlocks.VILLAGE_BLOCK));
+				stacks.add(new ItemStack(ModBlocks.STAIRS));
 			})
 			.build();
 
@@ -37,9 +38,11 @@ public class Prism implements ModInitializer {
 
 	public static final ItemGroup decoration = FabricItemGroupBuilder.create(
 			new Identifier(MOD_ID,"decoration"))
-			.icon(() -> new ItemStack(ModBlocks.CLOVER_PATCH))
+			.icon(() -> new ItemStack(ModBlocks.BARREL))
 			.appendItems(stacks -> {
 				stacks.add(new ItemStack(ModBlocks.CLOVER_PATCH));
+				stacks.add(new ItemStack(ModBlocks.BARREL));
+				stacks.add(new ItemStack(ModBlocks.BARREL_OPEN));
 
 			})
 			.build();
