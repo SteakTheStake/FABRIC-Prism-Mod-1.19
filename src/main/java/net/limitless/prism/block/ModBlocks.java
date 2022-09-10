@@ -55,8 +55,8 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"house_wall"), new BlockItem(HOUSE_WALL, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"house_tudor_wall"), HOUSE_TUDOR_WALL);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"house_tudor_wall"), new BlockItem(HOUSE_TUDOR_WALL, new Item.Settings()));
-        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"house_tudor_wall_2"), HOUSE_TUDOR_WALL_EXTRA);
-        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"house_tudor_wall_2"), new BlockItem(HOUSE_TUDOR_WALL_EXTRA, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"house_tudor_wall_extra"), HOUSE_TUDOR_WALL_EXTRA);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"house_tudor_wall_extra"), new BlockItem(HOUSE_TUDOR_WALL_EXTRA, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"wooden_wall"), WOODEN_WALL);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"wooden_floor"), new BlockItem(WOODEN_FLOOR, new Item.Settings()));
     }
