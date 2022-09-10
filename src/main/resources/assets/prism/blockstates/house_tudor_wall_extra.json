@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "prism:block/house_tudor_wall_2"
+      "model": "prism:block/house_tudor_wall_extra"
     }
   }
 }
