@@ -13,7 +13,7 @@ import net.minecraft.util.math.Direction;
 
 public class Barrel extends Block {
     public Barrel(FabricBlockSettings collidable) {
-        super(FabricBlockSettings.of(Material.STONE));
+        super(FabricBlockSettings.of(Material.WOOD));
     }
 
 }

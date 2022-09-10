@@ -16,14 +16,19 @@ public class Prism implements ModInitializer {
 
 	public static final ItemGroup construction = FabricItemGroupBuilder.create(
 			new Identifier(MOD_ID,"construction"))
-			.icon(() -> new ItemStack(ModBlocks.DIRTY_COBBLESTONE))
+			.icon(() -> new ItemStack(ModBlocks.HOUSE_WALL))
 			.appendItems(stacks -> {
 				stacks.add(new ItemStack(ModBlocks.DIRTY_COBBLESTONE));
+				stacks.add(new ItemStack(ModBlocks.HOUSE_WALL));
+				stacks.add(new ItemStack(ModBlocks.HOUSE_TUDOR_WALL));
+				stacks.add(new ItemStack(ModBlocks.HOUSE_TUDOR_WALL_2));
+				stacks.add(new ItemStack(ModBlocks.VILLAGE_BLOCK));
+				stacks.add(new ItemStack(ModBlocks.WOODEN_FLOOR));
+				stacks.add(new ItemStack(ModBlocks.WOODEN_WALL));
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK));
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK_TOP));
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK_WINDOW));
 				stacks.add(new ItemStack(ModBlocks.THATCHED_ROOF));
-				stacks.add(new ItemStack(ModBlocks.VILLAGE_BLOCK));
 				stacks.add(new ItemStack(ModBlocks.STAIRS));
 			})
 			.build();
