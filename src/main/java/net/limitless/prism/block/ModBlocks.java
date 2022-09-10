@@ -24,7 +24,7 @@ public class ModBlocks {
     public static final Block STAIRS = new Stairs(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
     public static final Block HOUSE_WALL = new HouseWall(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block HOUSE_TUDOR_WALL = new HouseTudorWall(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
-    public static final Block HOUSE_TUDOR_WALL_2 = new HouseTudorWall2(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block HOUSE_TUDOR_WALL_EXTRA = new HouseTudorWallExtra(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block WOODEN_WALL = new WoodenWall(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
     public static final Block WOODEN_FLOOR = new WoodenFloor(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
 
@@ -55,8 +55,8 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"house_wall"), new BlockItem(HOUSE_WALL, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"house_tudor_wall"), HOUSE_TUDOR_WALL);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"house_tudor_wall"), new BlockItem(HOUSE_TUDOR_WALL, new Item.Settings()));
-        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"house_tudor_wall"), HOUSE_TUDOR_WALL_2);
-        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"house_tudor_wall"), new BlockItem(HOUSE_TUDOR_WALL_2, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"house_tudor_wall_2"), HOUSE_TUDOR_WALL_EXTRA);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"house_tudor_wall_2"), new BlockItem(HOUSE_TUDOR_WALL_EXTRA, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"wooden_wall"), WOODEN_WALL);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"wooden_floor"), new BlockItem(WOODEN_FLOOR, new Item.Settings()));
     }
