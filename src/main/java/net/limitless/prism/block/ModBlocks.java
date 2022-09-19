@@ -27,6 +27,22 @@ public class ModBlocks {
     public static final Block HOUSE_TUDOR_WALL_EXTRA = new HouseTudorWallExtra(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block WOODEN_WALL = new WoodenWall(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
     public static final Block WOODEN_FLOOR = new WoodenFloor(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
+    public static final Block FENCE = new Fence(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
+    public static final Block BREAKFAST_SAVORY = new BreakfastSavory(FabricBlockSettings.of(Material.GLASS).nonOpaque().collidable(false));
+    public static final Block BREAKFAST_SWEET = new BreakfastSweet(FabricBlockSettings.of(Material.GLASS).nonOpaque().collidable(false));
+    public static final Block GRASS = new Grass(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(true));
+    public static final Block STONE = new Stone(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block COARSE_DIRT = new CoarseDirt(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block SAND = new Sand(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block MUD = new Mud(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block ANDESITE = new Andesite(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block DIORITE = new Diorite(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block GRANITE = new Granite(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block PALM_LOG_BIG = new PalmLogBig(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
+    public static final Block PALM_LOG_THIN = new PalmLogThin(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
+    public static final Block PALM_LEAVES = new PalmLeaves(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(true));
+    public static final Block PALM_LEAVES_TOP = new PalmLeavesTop(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(true));
+    public static final Block PALM_SAPLING = new PalmSapling(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(false));
 
     public static void registerModBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"village_block"), VILLAGE_BLOCK);
@@ -61,6 +77,38 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"wooden_wall"), new BlockItem(WOODEN_WALL, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"wooden_floor"), WOODEN_FLOOR);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"wooden_floor"), new BlockItem(WOODEN_FLOOR, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"fence"), FENCE);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"fence"), new BlockItem(FENCE, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"breakfast_savory"), BREAKFAST_SAVORY);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"breakfast_savory"), new BlockItem(BREAKFAST_SAVORY, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"breakfast_sweet"), BREAKFAST_SWEET);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"breakfast_sweet"), new BlockItem(BREAKFAST_SWEET, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"grass"), GRASS);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"grass"), new BlockItem(GRASS, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"sand"), SAND);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"sand"), new BlockItem(SAND, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"stone"), STONE);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"stone"), new BlockItem(STONE, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"coarse_dirt"), COARSE_DIRT);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"coarse_dirt"), new BlockItem(COARSE_DIRT, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"mud"), MUD);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"mud"), new BlockItem(MUD, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"andesite"), ANDESITE);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"andesite"), new BlockItem(ANDESITE, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"diorite"), DIORITE);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"diorite"), new BlockItem(DIORITE, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"granite"), GRANITE);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"granite"), new BlockItem(GRANITE, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"palm_log_big"), PALM_LOG_BIG);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"palm_log_big"), new BlockItem(PALM_LOG_BIG, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"palm_log_thin"), PALM_LOG_THIN);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"palm_log_thin"), new BlockItem(PALM_LOG_THIN, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"palm_leaves"), PALM_LEAVES);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"palm_leaves"), new BlockItem(PALM_LEAVES, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"palm_leaves_top"), PALM_LEAVES_TOP);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"palm_leaves_top"), new BlockItem(PALM_LEAVES_TOP, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"palm_sapling"), PALM_SAPLING);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"palm_sapling"), new BlockItem(PALM_SAPLING, new Item.Settings()));
     }
 
 }

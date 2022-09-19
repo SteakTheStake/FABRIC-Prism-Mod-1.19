@@ -2,13 +2,14 @@ package net.limitless.prism.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.Direction;
 
-public class Stairs extends Block {
-    public Stairs(Settings settings) {
+public class BreakfastSweet extends HorizontalFacingBlock {
+    public BreakfastSweet(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }

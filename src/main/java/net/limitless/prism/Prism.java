@@ -14,6 +14,34 @@ public class Prism implements ModInitializer {
 	public static final String MOD_ID = "prism";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	public static final ItemGroup terrain = FabricItemGroupBuilder.create(
+			new Identifier(MOD_ID,"terrain"))
+			.icon(() -> new ItemStack(ModBlocks.COARSE_DIRT))
+			.appendItems(stacks -> {
+				stacks.add(new ItemStack(ModBlocks.GRASS));
+				stacks.add(new ItemStack(ModBlocks.SAND));
+				stacks.add(new ItemStack(ModBlocks.STONE));
+				stacks.add(new ItemStack(ModBlocks.COARSE_DIRT));
+				stacks.add(new ItemStack(ModBlocks.MUD));
+				stacks.add(new ItemStack(ModBlocks.ANDESITE));
+				stacks.add(new ItemStack(ModBlocks.DIORITE));
+				stacks.add(new ItemStack(ModBlocks.GRANITE));
+			})
+			.build();
+
+	public static final ItemGroup foliage = FabricItemGroupBuilder.create(
+			new Identifier(MOD_ID,"foliage"))
+			.icon(() -> new ItemStack(ModBlocks.PALM_LOG_BIG))
+			.appendItems(stacks -> {
+				stacks.add(new ItemStack(ModBlocks.PALM_LOG_BIG));
+				stacks.add(new ItemStack(ModBlocks.PALM_LOG_THIN));
+				stacks.add(new ItemStack(ModBlocks.PALM_LEAVES));
+				stacks.add(new ItemStack(ModBlocks.PALM_LEAVES_TOP));
+				stacks.add(new ItemStack(ModBlocks.PALM_SAPLING));
+
+			})
+			.build();
+
 	public static final ItemGroup construction = FabricItemGroupBuilder.create(
 			new Identifier(MOD_ID,"construction"))
 			.icon(() -> new ItemStack(ModBlocks.HOUSE_WALL))
@@ -30,6 +58,7 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK_WINDOW));
 				stacks.add(new ItemStack(ModBlocks.THATCHED_ROOF));
 				stacks.add(new ItemStack(ModBlocks.STAIRS));
+				stacks.add(new ItemStack(ModBlocks.FENCE));
 			})
 			.build();
 
@@ -48,10 +77,11 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.CLOVER_PATCH));
 				stacks.add(new ItemStack(ModBlocks.BARREL));
 				stacks.add(new ItemStack(ModBlocks.BARREL_OPEN));
+				stacks.add(new ItemStack(ModBlocks.BREAKFAST_SAVORY));
+				stacks.add(new ItemStack(ModBlocks.BREAKFAST_SWEET));
 
 			})
 			.build();
-
 
 	@Override
 	public void onInitialize() {
