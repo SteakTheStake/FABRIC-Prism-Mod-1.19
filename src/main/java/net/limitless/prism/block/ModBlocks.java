@@ -43,6 +43,8 @@ public class ModBlocks {
     public static final Block PALM_LEAVES = new PalmLeaves(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(true));
     public static final Block PALM_LEAVES_TOP = new PalmLeavesTop(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(true));
     public static final Block PALM_SAPLING = new PalmSapling(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(false));
+    public static final Block BIG_TORCH = new BigTorch(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
+    public static final Block WALL_BIG_TORCH = new WallBigTorch(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
 
     public static void registerModBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"village_block"), VILLAGE_BLOCK);
@@ -109,6 +111,10 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"palm_leaves_top"), new BlockItem(PALM_LEAVES_TOP, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"palm_sapling"), PALM_SAPLING);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"palm_sapling"), new BlockItem(PALM_SAPLING, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"big_torch"), BIG_TORCH);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"big_torch"), new BlockItem(BIG_TORCH, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"wall_big_torch"), WALL_BIG_TORCH);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"wall_big_torch"), new BlockItem(WALL_BIG_TORCH, new Item.Settings()));
     }
 
 }

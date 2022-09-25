@@ -79,6 +79,7 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.BARREL_OPEN));
 				stacks.add(new ItemStack(ModBlocks.BREAKFAST_SAVORY));
 				stacks.add(new ItemStack(ModBlocks.BREAKFAST_SWEET));
+				stacks.add(new ItemStack(ModBlocks.BIG_TORCH));
 
 			})
 			.build();
