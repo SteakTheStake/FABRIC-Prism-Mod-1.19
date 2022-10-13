@@ -27,11 +27,17 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.WOODEN_WALL));
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK));
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK_TOP));
+				stacks.add(new ItemStack(ModBlocks.CASTLE_ARCH));
 				stacks.add(new ItemStack(ModBlocks.CASTLE_BLOCK_WINDOW));
+				stacks.add(new ItemStack(ModBlocks.BIG_ARCH));
+				stacks.add(new ItemStack(ModBlocks.WOODEN_WALL_PIECE));
 				stacks.add(new ItemStack(ModBlocks.DESERT_FLOOR));
 				stacks.add(new ItemStack(ModBlocks.DESERT_FLOOR_TILES));
 				stacks.add(new ItemStack(ModBlocks.RED_DESERT_FLOOR_TILES));
 				stacks.add(new ItemStack(ModBlocks.MARBLE_TILES));
+				stacks.add(new ItemStack(ModBlocks.SHOP_COVER_RIGHT));
+				stacks.add(new ItemStack(ModBlocks.SHOP_COVER_MIDDLE));
+				stacks.add(new ItemStack(ModBlocks.SHOP_COVER_LEFT));
 				stacks.add(new ItemStack(ModBlocks.DESERT_BRICK));
 				stacks.add(new ItemStack(ModBlocks.DESERT_BRICK_TOP));
 				stacks.add(new ItemStack(ModBlocks.DESERT_BRICK_WINDOW));
@@ -60,6 +66,10 @@ public class Prism implements ModInitializer {
 			.icon(() -> new ItemStack(ModBlocks.DINGING_ROOM_CHAIR))
 			.appendItems(stacks -> {
 				stacks.add(new ItemStack(ModBlocks.DINGING_ROOM_CHAIR));
+				stacks.add(new ItemStack(ModBlocks.ROPE_BLOCK));
+				stacks.add(new ItemStack(ModBlocks.CLOTHES_1));
+				stacks.add(new ItemStack(ModBlocks.CLOTHES_2));
+				stacks.add(new ItemStack(ModBlocks.CLOTHES_3));
 			})
 			.build();
 

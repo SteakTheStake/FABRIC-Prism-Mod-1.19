@@ -15,11 +15,17 @@ public class ModBlocks {
     public static final Block VILLAGE_BLOCK = new VillageBlock(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block CASTLE_BLOCK = new CastleBlock(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block CASTLE_BLOCK_TOP = new CastleBlockTop(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block CASTLE_ARCH = new CastleArch(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block CASTLE_BLOCK_WINDOW = new CastleBlockWindow(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block DESERT_FLOOR = new DesertFloor(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block DESERT_FLOOR_TILES = new DesertFloorTiles(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block RED_DESERT_FLOOR_TILES = new RedDesertFloorTiles(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block MARBLE_TILES = new MarbleTiles(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block SHOP_COVER_RIGHT = new ShopCoverRight(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
+    public static final Block SHOP_COVER_MIDDLE = new ShopCoverMiddle(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
+    public static final Block SHOP_COVER_LEFT = new ShopCoverLeft(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
+    public static final Block BIG_ARCH = new BigArch(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block WOODEN_WALL_PIECE = new WoodenWallPiece(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block DESERT_BRICK = new DesertBrick(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block DESERT_BRICK_TOP = new DesertBrickTop(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block DESERT_BRICK_WINDOW = new DesertBrickWindow(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
@@ -53,6 +59,10 @@ public class ModBlocks {
     public static final Block PALM_SAPLING = new PalmSapling(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(false));
     public static final Block BIG_TORCH = new BigTorch(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
     public static final Block WALL_BIG_TORCH = new WallBigTorch(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
+    public static final Block ROPE_BLOCK = new RopeBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
+    public static final Block CLOTHES_1 = new ClothesOne(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
+    public static final Block CLOTHES_2 = new ClothesTwo(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
+    public static final Block CLOTHES_3 = new ClothesThree(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
 
     public static void registerModBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"village_block"), VILLAGE_BLOCK);
@@ -63,8 +73,14 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"castle_block"), new BlockItem(CASTLE_BLOCK, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"castle_block_top"), CASTLE_BLOCK_TOP);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"castle_block_top"), new BlockItem(CASTLE_BLOCK_TOP, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"castle_arch"), CASTLE_ARCH);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"castle_arch"), new BlockItem(CASTLE_ARCH, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"castle_block_window"), CASTLE_BLOCK_WINDOW);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"castle_block_window"), new BlockItem(CASTLE_BLOCK_WINDOW, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"big_arch"), BIG_ARCH);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"big_arch"), new BlockItem(BIG_ARCH, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"wooden_wall_piece"), WOODEN_WALL_PIECE);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"wooden_wall_piece"), new BlockItem(WOODEN_WALL_PIECE, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_floor"), DESERT_FLOOR);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"desert_floor"), new BlockItem(DESERT_FLOOR, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_floor_tiles"), DESERT_FLOOR_TILES);
@@ -73,6 +89,12 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"red_desert_floor_tiles"), new BlockItem(RED_DESERT_FLOOR_TILES, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"marble_tiles"), MARBLE_TILES);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"marble_tiles"), new BlockItem(MARBLE_TILES, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"shop_cover_right"), SHOP_COVER_RIGHT);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"shop_cover_right"), new BlockItem(SHOP_COVER_RIGHT, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"shop_cover_middle"), SHOP_COVER_MIDDLE);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"shop_cover_middle"), new BlockItem(SHOP_COVER_MIDDLE, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"shop_cover_left"), SHOP_COVER_LEFT);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"shop_cover_left"), new BlockItem(SHOP_COVER_LEFT, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_brick"), DESERT_BRICK);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"desert_brick"), new BlockItem(DESERT_BRICK, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_brick_top"), DESERT_BRICK_TOP);
@@ -139,6 +161,14 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"big_torch"), new BlockItem(BIG_TORCH, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"wall_big_torch"), WALL_BIG_TORCH);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"wall_big_torch"), new BlockItem(WALL_BIG_TORCH, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"rope"), ROPE_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"rope"), new BlockItem(ROPE_BLOCK, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"clothes_1"), CLOTHES_1);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"clothes_1"), new BlockItem(CLOTHES_1, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"clothes_2"), CLOTHES_2);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"clothes_2"), new BlockItem(CLOTHES_2, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"clothes_3"), CLOTHES_3);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"clothes_3"), new BlockItem(CLOTHES_3, new Item.Settings()));
     }
 
 }
