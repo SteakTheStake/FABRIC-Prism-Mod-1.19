@@ -57,6 +57,7 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.PALM_LEAVES));
 				stacks.add(new ItemStack(ModBlocks.PALM_LEAVES_TOP));
 				stacks.add(new ItemStack(ModBlocks.PALM_SAPLING));
+				stacks.add(new ItemStack(ModBlocks.TROPICAL_PLANT));
 
 			})
 			.build();
