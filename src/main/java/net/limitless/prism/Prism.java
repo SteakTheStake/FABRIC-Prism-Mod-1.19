@@ -57,6 +57,7 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.PALM_LEAVES));
 				stacks.add(new ItemStack(ModBlocks.PALM_LEAVES_TOP));
 				stacks.add(new ItemStack(ModBlocks.PALM_SAPLING));
+				stacks.add(new ItemStack(ModBlocks.TROPICAL_PLANT));
 
 			})
 			.build();
@@ -66,10 +67,6 @@ public class Prism implements ModInitializer {
 			.icon(() -> new ItemStack(ModBlocks.DINGING_ROOM_CHAIR))
 			.appendItems(stacks -> {
 				stacks.add(new ItemStack(ModBlocks.DINGING_ROOM_CHAIR));
-				stacks.add(new ItemStack(ModBlocks.ROPE_BLOCK));
-				stacks.add(new ItemStack(ModBlocks.CLOTHES_1));
-				stacks.add(new ItemStack(ModBlocks.CLOTHES_2));
-				stacks.add(new ItemStack(ModBlocks.CLOTHES_3));
 			})
 			.build();
 
@@ -84,6 +81,14 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.BREAKFAST_SWEET));
 				stacks.add(new ItemStack(ModBlocks.BIG_TORCH));
 				stacks.add(new ItemStack(ModBlocks.WALL_BIG_TORCH));
+				stacks.add(new ItemStack(ModBlocks.ROPE_BLOCK));
+				stacks.add(new ItemStack(ModBlocks.CLOTHES_1));
+				stacks.add(new ItemStack(ModBlocks.CLOTHES_2));
+				stacks.add(new ItemStack(ModBlocks.CLOTHES_3));
+				stacks.add(new ItemStack(ModBlocks.BASKET_OF_POTATO));
+				stacks.add(new ItemStack(ModBlocks.BASKET_OF_MANGO));
+				stacks.add(new ItemStack(ModBlocks.BASKET_OF_APPLE));
+				stacks.add(new ItemStack(ModBlocks.BASKET_OF_RADISH));
 
 			})
 			.build();

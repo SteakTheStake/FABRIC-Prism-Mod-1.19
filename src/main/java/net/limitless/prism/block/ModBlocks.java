@@ -24,6 +24,11 @@ public class ModBlocks {
     public static final Block SHOP_COVER_RIGHT = new ShopCoverRight(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
     public static final Block SHOP_COVER_MIDDLE = new ShopCoverMiddle(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
     public static final Block SHOP_COVER_LEFT = new ShopCoverLeft(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
+
+    public static final Block BASKET_OF_POTATO = new BasketOfPotato(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
+    public static final Block BASKET_OF_MANGO = new BasketOfMango(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
+    public static final Block BASKET_OF_APPLE = new BasketOfApple(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
+    public static final Block BASKET_OF_RADISH = new BasketOfRadish(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
     public static final Block BIG_ARCH = new BigArch(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block WOODEN_WALL_PIECE = new WoodenWallPiece(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block DESERT_BRICK = new DesertBrick(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
@@ -45,6 +50,7 @@ public class ModBlocks {
     public static final Block BREAKFAST_SAVORY = new BreakfastSavory(FabricBlockSettings.of(Material.GLASS).nonOpaque().collidable(false));
     public static final Block BREAKFAST_SWEET = new BreakfastSweet(FabricBlockSettings.of(Material.GLASS).nonOpaque().collidable(false));
     public static final Block GRASS = new Grass(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(true));
+
     public static final Block STONE = new Stone(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block COARSE_DIRT = new CoarseDirt(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block SAND = new Sand(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
@@ -56,6 +62,8 @@ public class ModBlocks {
     public static final Block PALM_LOG_THIN = new PalmLogThin(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
     public static final Block PALM_LEAVES = new PalmLeaves(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(true));
     public static final Block PALM_LEAVES_TOP = new PalmLeavesTop(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(true));
+
+    public static final Block TROPICAL_PLANT = new TropicalPlant(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(false));
     public static final Block PALM_SAPLING = new PalmSapling(FabricBlockSettings.of(Material.LEAVES).nonOpaque().collidable(false));
     public static final Block BIG_TORCH = new BigTorch(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
     public static final Block WALL_BIG_TORCH = new WallBigTorch(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(false));
@@ -95,6 +103,14 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"shop_cover_middle"), new BlockItem(SHOP_COVER_MIDDLE, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"shop_cover_left"), SHOP_COVER_LEFT);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"shop_cover_left"), new BlockItem(SHOP_COVER_LEFT, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"basket_of_potato"), BASKET_OF_POTATO);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"basket_of_potato"), new BlockItem(BASKET_OF_POTATO, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"basket_of_mango"), BASKET_OF_MANGO);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"basket_of_mango"), new BlockItem(BASKET_OF_MANGO, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"basket_of_apple"), BASKET_OF_APPLE);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"basket_of_apple"), new BlockItem(BASKET_OF_APPLE, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"basket_of_radish"), BASKET_OF_RADISH);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"basket_of_radish"), new BlockItem(BASKET_OF_RADISH, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_brick"), DESERT_BRICK);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"desert_brick"), new BlockItem(DESERT_BRICK, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_brick_top"), DESERT_BRICK_TOP);
@@ -169,6 +185,8 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"clothes_2"), new BlockItem(CLOTHES_2, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"clothes_3"), CLOTHES_3);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"clothes_3"), new BlockItem(CLOTHES_3, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"tropical_plant"), TROPICAL_PLANT);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"tropical_plant"), new BlockItem(TROPICAL_PLANT, new Item.Settings()));
     }
 
 }
