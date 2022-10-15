@@ -24,7 +24,6 @@ public class ModBlocks {
     public static final Block SHOP_COVER_RIGHT = new ShopCoverRight(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
     public static final Block SHOP_COVER_MIDDLE = new ShopCoverMiddle(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
     public static final Block SHOP_COVER_LEFT = new ShopCoverLeft(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
-
     public static final Block BASKET_OF_POTATO = new BasketOfPotato(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
     public static final Block BASKET_OF_MANGO = new BasketOfMango(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
     public static final Block BASKET_OF_APPLE = new BasketOfApple(FabricBlockSettings.of(Material.WOOD).nonOpaque().collidable(true));
