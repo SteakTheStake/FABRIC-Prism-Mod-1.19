@@ -33,6 +33,8 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.WOODEN_WALL_PIECE));
 				stacks.add(new ItemStack(ModBlocks.DESERT_FLOOR));
 				stacks.add(new ItemStack(ModBlocks.DESERT_FLOOR_TILES));
+				stacks.add(new ItemStack(ModBlocks.DESERT_BRICK_TILES));
+				stacks.add(new ItemStack(ModBlocks.DESERT_BRICK_WALL));
 				stacks.add(new ItemStack(ModBlocks.RED_DESERT_FLOOR_TILES));
 				stacks.add(new ItemStack(ModBlocks.MARBLE_TILES));
 				stacks.add(new ItemStack(ModBlocks.SHOP_COVER_RIGHT));

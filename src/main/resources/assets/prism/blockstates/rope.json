@@ -1,19 +1,16 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "prism:block/rope"
-    },
-    "facing=south": {
-      "model": "prism:block/rope",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "prism:block/rope",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "prism:block/rope",
+    "axis=x": {
+      "model": "minecraft:block/rope",
+      "x": 90,
       "y": 90
+    },
+    "axis=y": {
+      "model": "minecraft:block/rope"
+    },
+    "axis=z": {
+      "model": "minecraft:block/rope",
+      "x": 90
     }
   }
 }

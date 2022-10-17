@@ -1,19 +1,16 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "prism:block/clothes_2"
-    },
-    "facing=south": {
-      "model": "prism:block/clothes_2",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "prism:block/clothes_2",
-      "y": 270
-    },
-    "facing=east": {
-      "model": "prism:block/clothes_2",
+    "axis=x": {
+      "model": "minecraft:block/clothes_2",
+      "x": 90,
       "y": 90
+    },
+    "axis=y": {
+      "model": "minecraft:block/clothes_2"
+    },
+    "axis=z": {
+      "model": "minecraft:block/clothes_2",
+      "x": 90
     }
   }
 }

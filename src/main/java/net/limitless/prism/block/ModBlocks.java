@@ -19,6 +19,8 @@ public class ModBlocks {
     public static final Block CASTLE_BLOCK_WINDOW = new CastleBlockWindow(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block DESERT_FLOOR = new DesertFloor(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block DESERT_FLOOR_TILES = new DesertFloorTiles(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block DESERT_BRICK_TILES = new DesertBrickTiles(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
+    public static final Block DESERT_BRICK_WALL = new DesertBrickWall(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block RED_DESERT_FLOOR_TILES = new RedDesertFloorTiles(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block MARBLE_TILES = new MarbleTiles(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(true));
     public static final Block SHOP_COVER_RIGHT = new ShopCoverRight(FabricBlockSettings.of(Material.STONE).nonOpaque().collidable(false));
@@ -112,6 +114,10 @@ public class ModBlocks {
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"basket_of_radish"), new BlockItem(BASKET_OF_RADISH, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_brick"), DESERT_BRICK);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"desert_brick"), new BlockItem(DESERT_BRICK, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_brick_wall"), DESERT_BRICK_WALL);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"desert_brick_wall"), new BlockItem(DESERT_BRICK_WALL, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_brick_tiles"), DESERT_BRICK_TILES);
+        Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"desert_brick_tiles"), new BlockItem(DESERT_BRICK_TILES, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_brick_top"), DESERT_BRICK_TOP);
         Registry.register(Registry.ITEM, new Identifier(Prism.MOD_ID,"desert_brick_top"), new BlockItem(DESERT_BRICK_TOP, new Item.Settings()));
         Registry.register(Registry.BLOCK, new Identifier(Prism.MOD_ID,"desert_brick_window"), DESERT_BRICK_WINDOW);
