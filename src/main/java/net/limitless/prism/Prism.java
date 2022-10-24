@@ -4,6 +4,10 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.limitless.prism.block.ModBlocks;
 import net.limitless.prism.item.ModItems;
+import net.limitless.prism.world.dimension.ModDimensions;
+import net.limitless.prism.world.dimension.ModPortals;
+import net.limitless.prism.world.feature.ModConfiguredFeatures;
+import net.limitless.prism.world.gen.ModWorldGen;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -81,8 +85,6 @@ public class Prism implements ModInitializer {
 				stacks.add(new ItemStack(ModBlocks.BARREL_OPEN));
 				stacks.add(new ItemStack(ModBlocks.BREAKFAST_SAVORY));
 				stacks.add(new ItemStack(ModBlocks.BREAKFAST_SWEET));
-				stacks.add(new ItemStack(ModBlocks.BIG_TORCH));
-				stacks.add(new ItemStack(ModBlocks.WALL_BIG_TORCH));
 				stacks.add(new ItemStack(ModBlocks.ROPE_BLOCK));
 				stacks.add(new ItemStack(ModBlocks.CLOTHES_1));
 				stacks.add(new ItemStack(ModBlocks.CLOTHES_2));
@@ -113,8 +115,11 @@ public class Prism implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModConfiguredFeatures.registerConfiguredFeatures();
 		ModBlocks.registerModBlocks();
-		ModItems.registerItems();
-
+		ModItems.registerModItems();
+		ModDimensions.register();
+		ModPortals.registerPortals();
+		ModWorldGen.generateWorldGen();
 	}
 }

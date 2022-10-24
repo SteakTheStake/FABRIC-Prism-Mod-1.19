@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "minecraft:block/rope",
+      "model": "prism:block/rope",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "minecraft:block/rope"
+      "model": "prism:block/rope"
     },
     "axis=z": {
-      "model": "minecraft:block/rope",
+      "model": "prism:block/rope",
       "x": 90
     }
   }

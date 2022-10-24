@@ -1,0 +1,54 @@
+{
+  "temperature": 0.3,
+  "downfall": 0.7,
+  "precipitation": "none",
+  "effects": {
+    "sky_color": 8103167,
+    "fog_color": 12638463,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    }
+  },
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen",
+      "minecraft:patch_tall_grass_2",
+      "minecraft:trees_plains",
+      "minecraft:patch_grass_plain",
+      "prism:rolling_hills/7",
+      "prism:rolling_hills/6",
+      "prism:rolling_hills/5",
+      "prism:rolling_hills/4",
+      "prism:rolling_hills/3",
+      "prism:rolling_hills/2",
+      "prism:rolling_hills/1"
+    ],
+    []
+  ]
+}

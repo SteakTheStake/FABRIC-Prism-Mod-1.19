@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "minecraft:block/clothes_2",
+      "model": "prism:block/clothes_2",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "minecraft:block/clothes_2"
+      "model": "prism:block/clothes_2"
     },
     "axis=z": {
-      "model": "minecraft:block/clothes_2",
+      "model": "prism:block/clothes_2",
       "x": 90
     }
   }

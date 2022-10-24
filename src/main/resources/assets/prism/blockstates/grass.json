@@ -1,28 +1,28 @@
 {
   "variants": {
     "layers=1": {
-      "model": "prism:block/grass_height2"
+      "model": "minecraft:grass_height2"
     },
     "layers=2": {
-      "model": "prism:block/grass_height4"
+      "model": "minecraft:grass_height4"
     },
     "layers=3": {
-      "model": "prism:block/grass_height6"
+      "model": "minecraft:grass_height6"
     },
     "layers=4": {
-      "model": "prism:block/grass_height8"
+      "model": "minecraft:grass_height8"
     },
     "layers=5": {
-      "model": "prism:block/grass_height10"
+      "model": "minecraft:grass_height10"
     },
     "layers=6": {
-      "model": "prism:block/grass_height12"
+      "model": "minecraft:grass_height12"
     },
     "layers=7": {
-      "model": "prism:block/grass_height14"
+      "model": "minecraft:grass_height14"
     },
     "layers=8": {
-      "model": "prism:block/grass_block"
+      "model": "minecraft:grass_block"
     }
   }
 }
