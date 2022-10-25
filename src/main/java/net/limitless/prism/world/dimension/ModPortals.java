@@ -18,13 +18,25 @@ public class ModPortals {
             SMOOTH_DIMENSION_KEY.getValue());
 
 
+    public static final RegistryKey<World> DUNES_DIMENSION_KEY = RegistryKey.of(Registry.WORLD_KEY,
+            new Identifier(Prism.MOD_ID, "dunes"));
+    public static final RegistryKey<DimensionType> DUNES_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY,
+            DUNES_DIMENSION_KEY.getValue());
+
+
     public static void registerPortals() {
         CustomPortalBuilder.beginPortal()
-                .frameBlock(ModBlocks.MARBLE_TILES)
+                .frameBlock(ModBlocks.CASTLE_BLOCK)
                 .destDimID(SMOOTH_DIMENSION_KEY.getValue())
                 .tintColor(255, 255, 0)
                 .lightWithItem(ModItems.BIG_TORCH)
-                .onlyLightInOverworld()
+                .registerPortal();
+
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(ModBlocks.MARBLE_TILES)
+                .destDimID(DUNES_DIMENSION_KEY.getValue())
+                .tintColor(255, 0, 255)
+                .lightWithItem(ModItems.BIG_TORCH)
                 .registerPortal();
     }
 }
